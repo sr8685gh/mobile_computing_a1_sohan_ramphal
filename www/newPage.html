@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<link rel = "stylesheet" href = "css/jquery.mobile-1.4.5.css">
+<script src = "js/jquery.js"></script>
+<script src = "js/jquery.mobile-1.4.5.js"></script>
+</head>
+
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bar{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+<body>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html" rel = "external">App Goals</a>
+    <a href="critiques.html" rel = "external">App Critques</a>
+<a href="appsketches.html" rel = "external">Sketches</a> 
+<a href="technologies.html" rel = "external">Technologies</a> 
+
+  </div>
+</div>
+
+
+
+<script>
+
+ function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+      if (!event.target.matches('.dropbtn')) {
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div id = "menuBar">
+</div>
+
+<br> 
+<h1>User Stories</h1>
+
+<img src = "projectimg2.png" width = "100" height = "100" align = "middle">
+<br>
+<br>
+Alice is 35 years old and a mother, who lives a very busy life. She works from 8:30 to 3pm and She<br> 
+is the sole shopper in her family and does her shopping in bulk. Alice often forgets,<br> 
+or does not have the time to write down a shopping list. What she needs usually contains<br> 
+many of the same items, but items she needs can also occasionally vary. Some of Alice’s goals would be,<br>
+<ul>
+<li>To do her shopping quickly and efficiently.</li>
+<li>To save some money on shopping.</li>
+<li>To open up the app, and create a list, by typing all the items she needs</li>
+<li>To save the state of the shopping list, which will allow her to view it later</li>
+</ul>
+</p>
+
+<div data-role = "footer">
+<div data-role = "navbar">
+<ul>
+<li><a href ="index.html" rel = "external" data-icon = "arrow-l">Previous</a></li>
+<li><a href ="story2.html" rel = "external" data-icon = "arrow-r">Next</a></li>
+</ul>
+</div>
+</div>
+
+
+
+</body>
+</html>

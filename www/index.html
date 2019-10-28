@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+<link rel = "stylesheet" href = "css/jquery.mobile-1.4.5.css">
+<script src = "js/jquery.js"></script>
+<script src = "js/jquery.mobile-1.4.5.js"></script>
+
+
+<div id = "menuBar">
+</div>
+
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bar{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.blid{
+display: none;
+}
+.blid{
+background-color:black;
+color:white;
+
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+<h1>App Goals</h1>
+<br>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+<nav>
+    <a href="newPage.html"rel = "external">Stories</a>
+    <a href = "appsketches.html" rel = "external">Sketches</a>
+    <a href="critiques.html"rel = "external">App Critques</a>
+<a href="technologies.html"rel = "external">Technologies</a>
+</nav>
+  </div>
+
+</div>
+
+
+<script>
+
+ function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+<script>
+
+window.onclick = function(event) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+      if (!event.target.matches('.dropbtn')) {
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<br>
+
+<p>For my app, I have decided to design a shopping list. Some of the features of the app will include letting the user of the app add items to the list of shopping items and will also  allow the user of the application to delete or change items from the shopping list when the user has brought them. <br>The goal of this app is to make it easier for shoppers to remember exactly what they have to buy when they go out shopping. This app would also give the option for the user to record what shopping store they brought the items from, as well as the final price of the items that they brought. The type of users for this app would be members of the general public who do their shopping in bulk.
+</p>
+<p>I would try and make this app different from other shopping list apps that are out there by adding additional features, such as price comparisons between two different shopping centres. This will allow the user to keep track of how much money they are spending at different shopping centres.</p>
+
+
+<div data-role = "footer">
+<div data-role = "navbar">
+<ul>
+<li><a href ="newPage.html" rel ="external"data-icon = "arrow-r">Next</a></li>
+</ul>
+</div>
+</div>
+
+
+</body>
+</html>
